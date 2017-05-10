@@ -18,57 +18,56 @@
             android:scaleType="centerCrop"
             android:src="@drawable/tumbnail" />
 
-        <android.support.design.widget.CoordinatorLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+
 
             <TextView
                 android:id="@+id/tv_news_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="10dp"
-                android:layout_toRightOf="@id/iv_tumbnail"
+                android:layout_below="@id/iv_tumbnail"
                 android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="এফবিআই প্রধানকে বরখাস্ত করলেন ট্রাম্প"
-                android:textColor="@color/colorIcons"
+                android:paddingTop="5dp"
+                android:text="KBNKAdbkandksad"
+                android:textColor="@color/colorPrimaryText"
                 android:textStyle="bold" />
-        </android.support.design.widget.CoordinatorLayout>
 
         <TextView
+            android:id="@+id/tv_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/iv_tumbnail"
+            android:layout_below="@id/tv_news_title"
             android:padding="5dp"
             android:text="বিবিসি জানিয়েছে, অ্যাটর্নি জেনারেল জেফ সেশনসের সুপারিশের ভিত্তিতেই প্রসিডেন্ট ট্রাম্প এ সিদ্ধান্ত নিয়েছেন বলে হোয়াইট হাউজের ভাষ্য।
-তবে ডেমোক্র্যাটদের অভিযোগ, ট্রাম্পের নির্বাচনী প্রচারের সঙ্গে রাশিয়ার যোগাযোগ নিয়ে তদন্ত করছিলেন বলেই জেমস কোমিকে বরখাস্ত হতে হল।
-গত সপ্তাহে কংগ্রেসের শুনানিতে হিলারির ইমেইল নিয়ে কোমি পুরোপুরি সঠিক তথ্য দেননি- এমন তথ্য বেরিয়ে আসার পর হোয়াইট হাউজের এই পদক্ষ ..."
+তবে ডেমোক্র্যাটদের অভিযোগ, ট্রাম্পের নির্বাচনী প্রচারের সঙ্গে রাশিয়ার যোগাযোগ নিয়ে তদন্ত করছিলেন বলেই জেমস কোমিকে বরখাস্ত হতে হল। ..."
             android:textSize="10dp" />
 
-        <TextView
-            android:id="@+id/tv_time_update"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:text="2017-05-10 11:05:43.0 BdST"
-            android:textSize="8dp"
-            android:textStyle="italic"
-            android:alpha=".8"
-            android:padding="5dp"/>
+      <RelativeLayout
+          android:layout_alignParentBottom="true"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <TextView
+              android:layout_alignParentLeft="true"
+              android:id="@+id/tv_time_update"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="2017-05-10 11:05:43.0 BdST"
+              android:textSize="8dp"
+              android:textStyle="italic"
+              android:alpha=".8"
+              android:padding="5dp"/>
 
-        <TextView
-            android:id="@+id/tv_source"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:alpha=".8"
-            android:padding="5dp"
-            android:text="বিডিনিউজ টোয়েন্টিফোর ডটকম"
-            android:textSize="8dp"
-            android:textStyle="italic" />
+          <TextView
+              android:layout_alignParentRight="true"
+              android:id="@+id/tv_source"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:alpha=".8"
+              android:padding="5dp"
+              android:text="বিডিনিউজ টোয়েন্টিফোর ডটকম"
+              android:textSize="8dp"
+              android:textStyle="italic" />
+      </RelativeLayout>
     </RelativeLayout>
 
 </android.support.v7.widget.CardView>
