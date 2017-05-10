@@ -1,4 +1,4 @@
-package com.marblelab.newsreader;
+package com.marblelab.newsreader.newsfeedcard;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.marblelab.newsreader.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -15,11 +17,11 @@ import java.util.List;
  * Created by Abid Hasan on 5/10/2017.
  */
 
-public class NewsFeedListAdapter extends RecyclerView.Adapter<NewsFeedListAdapter.ViewHolder> {
-    List<NewsFeed> newsFeeds;
+public class NewsfeedListAdapter extends RecyclerView.Adapter<NewsfeedListAdapter.ViewHolder> {
+    List<Newsfeed> newsFeeds;
     Context context;
 
-    public NewsFeedListAdapter( Context context,List<NewsFeed> newsFeeds) {
+    public NewsfeedListAdapter(Context context, List<Newsfeed> newsFeeds) {
         this.newsFeeds = newsFeeds;
         this.context = context;
     }

@@ -1,8 +1,9 @@
-package com.marblelab.newsreader;
+package com.marblelab.newsreader.newsfeedcard;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+
+import com.marblelab.newsreader.R;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -14,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
         android.app.FragmentManager fragmentManager=getFragmentManager();
         android.app.FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
-        NewsFeedFragment newsFeedFragment=new NewsFeedFragment();
+        NewsfeedFragment newsFeedFragment=new NewsfeedFragment();
         fragmentTransaction.replace(R.id.fragment_container,newsFeedFragment);
         fragmentTransaction.commit();
 

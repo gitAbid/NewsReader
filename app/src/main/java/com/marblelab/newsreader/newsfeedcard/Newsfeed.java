@@ -1,10 +1,10 @@
-package com.marblelab.newsreader;
+package com.marblelab.newsreader.newsfeedcard;
 
 /**
  * Created by Abid Hasan on 5/10/2017.
  */
 
-public class NewsFeed {
+public class Newsfeed {
     private String title;
     private String description;
     private String tumbTitle;
@@ -16,7 +16,7 @@ public class NewsFeed {
     private boolean favorite;
     private boolean saved;
 
-    public NewsFeed(String title, String description, String tumbTitle, String tumbDescription, String tumbImaageLink, String tag, String source, String updateTimeDate, boolean favorite, boolean saved) {
+    public Newsfeed(String title, String description, String tumbTitle, String tumbDescription, String tumbImaageLink, String tag, String source, String updateTimeDate, boolean favorite, boolean saved) {
         this.title = title;
         this.description = description;
         this.tumbTitle = tumbTitle;
