@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import com.marblelab.newsreader.R;
 
 
-public class MainActivity extends AppCompatActivity {
+public class NewsfeedActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
