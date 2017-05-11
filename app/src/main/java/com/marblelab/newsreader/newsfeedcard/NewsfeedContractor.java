@@ -8,9 +8,9 @@ import java.util.List;
 
 public interface NewsfeedContractor {
 
-    public void parseData();
-    public List getData();
-    public void addToList();
-    public void checkForUpdate();
-    public void publish();
+    void parseData();
+    List getData();
+    void addToList();
+    void checkForUpdate();
+    void publish();
 }

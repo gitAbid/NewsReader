@@ -41,9 +41,7 @@ public class Newsfeed {
         this.tumbTitle = tumbTitle;
     }
 
-    public void setTumbDescription(String tumbDescription) {
-        this.tumbDescription = tumbDescription;
-    }
+    public void setTumbDescription(String tumbDescription) {this.tumbDescription = tumbDescription;}
 
     public void setTumbImaageLink(String tumbImaageLink) {
         this.tumbImaageLink = tumbImaageLink;
@@ -69,10 +67,7 @@ public class Newsfeed {
         this.saved = saved;
     }
 
-    public String getTitle() {
-
-        return title;
-    }
+    public String getTitle() {return title;}
 
     public String getDescription() {
         return description;

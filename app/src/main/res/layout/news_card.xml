@@ -19,7 +19,10 @@
             android:src="@drawable/tumbnail" />
 
 
-
+            <!-- Here is the problem -->
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
             <TextView
                 android:id="@+id/tv_news_title"
                 android:layout_width="match_parent"
@@ -27,16 +30,18 @@
                 android:layout_gravity="center"
                 android:layout_below="@id/iv_tumbnail"
                 android:gravity="center_horizontal"
-                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
                 android:text="KBNKAdbkandksad"
-                android:textColor="@color/colorPrimaryText"
+                android:textColor="@color/colorIcons"
                 android:textStyle="bold" />
+        </android.support.design.widget.CoordinatorLayout>
+
 
         <TextView
             android:id="@+id/tv_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_news_title"
+            android:layout_below="@id/iv_tumbnail"
             android:padding="5dp"
             android:text="বিবিসি জানিয়েছে, অ্যাটর্নি জেনারেল জেফ সেশনসের সুপারিশের ভিত্তিতেই প্রসিডেন্ট ট্রাম্প এ সিদ্ধান্ত নিয়েছেন বলে হোয়াইট হাউজের ভাষ্য।
 তবে ডেমোক্র্যাটদের অভিযোগ, ট্রাম্পের নির্বাচনী প্রচারের সঙ্গে রাশিয়ার যোগাযোগ নিয়ে তদন্ত করছিলেন বলেই জেমস কোমিকে বরখাস্ত হতে হল। ..."
